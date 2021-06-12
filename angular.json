@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-using-cross-angular": {
+    "cross-ui-angular-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-using-cross-angular",
+            "outputPath": "dist/cross-ui-angular-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-using-cross-angular:build:production"
+              "browserTarget": "cross-ui-angular-demo:build:production"
             },
             "development": {
-              "browserTarget": "angular-using-cross-angular:build:development"
+              "browserTarget": "cross-ui-angular-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-using-cross-angular:build"
+            "browserTarget": "cross-ui-angular-demo:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "angular-using-cross-angular"
+  "defaultProject": "cross-ui-angular-demo"
 }
